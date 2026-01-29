@@ -1,106 +1,88 @@
-# E-Commerce E2E Test Suite
+
+# E2E Test Ecommerce App
 
 End-to-end test automation for the BookCart online bookstore using Playwright and TypeScript.
 
 ## Tech Stack
 
-- Node.js
 - TypeScript
-- Playwright Test
+- Playwright
+- Node.js
 - ESLint
 - dotenv
+
+## Project Structure
+
+- `pages/` — Page Object Model classes.
+- `fixtures/` — reusable Playwright test fixtures.
+- `tests/` — end-to-end test specifications.
 
 ## Target Application
 
 https://bookcart.azurewebsites.net/
 
-## Prerequisites
+## Getting Started
 
-- Node.js 20+
-- npm
-- Git
-
-## Installation
-
-Clone the repository and install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Install the Chromium browser:
+### Install Playwright browsers
 
 ```bash
-npx playwright install chromium
+npx playwright install
 ```
 
-## Environment Configuration
+### Configure environment variables
 
-Create a `.env` file in the project root:
+Copy `.env.example` to `.env` and configure the target application URL.
 
-```env
-BASE_URL=https://bookcart.azurewebsites.net
-```
-
-## Running Tests
-
-Run all tests:
+### Run tests
 
 ```bash
 npm test
 ```
 
-Run tests in headed mode:
+### Run tests in headed mode
 
 ```bash
 npm run test:headed
 ```
 
-Open Playwright UI mode:
+### Run tests in UI mode
 
 ```bash
 npm run test:ui
 ```
 
-Run tests in Chromium:
+### Run tests in debug mode
+
+```bash
+npm run test:debug
+```
+
+### Run tests in Chromium
 
 ```bash
 npm run test:chromium
 ```
 
-Open the HTML report:
-
-```bash
-npm run report
-```
-
-## Code Quality
-
-Run ESLint:
+### Run lint
 
 ```bash
 npm run lint
 ```
 
-Run TypeScript checks:
+### Run type checking
 
 ```bash
 npm run typecheck
 ```
 
-## Project Status
+### Open Playwright report
 
-The initial project infrastructure is being configured.
-
-Planned test coverage:
-
-- Authentication
-- Product search and navigation
-- Shopping cart management
-- Checkout process
-- Test reporting
-- Continuous integration
-
-## License
-
-This project is intended for educational purposes.
+```bash
+npm run report
+```
